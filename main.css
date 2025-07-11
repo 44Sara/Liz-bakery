@@ -160,9 +160,9 @@ ul {
 
 ul.dropdown_style {
     position: absolute;
-    width: 200px;
+    width: 100px;
     background: #111;
-    padding: 20px;
+    padding: 10px;
     top: 100%;
     left: 0;
     opacity: 0;
@@ -324,6 +324,7 @@ slider-area start
     -moz-transition: all .3s;
 }
 
+
 .btn-style a:hover:before {
     left: -65px;
 }
@@ -350,11 +351,11 @@ slider-area start
     font-size: 14px;
 }
 
-.social-area li i {
+/* .social-area li i {
     margin-left: 10px;
     font-size: 8px;
     color: hotpink;
-}
+} */
 
 .slider-active .owl-dots {
     position: absolute;
@@ -582,10 +583,12 @@ protfolio-area start
     transform: scale(1);
 }
 
+
 .protfolio-content h4 {
     color: #fff;
-    font-size:
+    font-size: 18px; /* or any appropriate value */
 }
+
 
 .protfolio-content {
     position: absolute;
@@ -1158,7 +1161,7 @@ h2.widget_title:after {
     letter-spacing: 0;
 }
 
-.widget_tags {}
+/* .widget_tags {} */
 
 .widget_tags ul li {
     display: inline-block;
@@ -1432,7 +1435,13 @@ h4.comment-title:before {
     overflow-x: hidden;
 }
 
-.comment-content .meta-data {}
+/* .comment-content .meta-data {} */
+.comment-content .meta-data {
+  font-size: 14px;
+  color: #777;
+}
+
+
 
 .comment-content .meta-data h2 {
     font-size: 18px;
@@ -1626,7 +1635,6 @@ PRELOADER WAVE CSS
     -webkit-animation-delay: -0.8s;
     animation-delay: -0.8s;
 }
-
 @-webkit-keyframes preloader-wave {
     0% {
         opacity: 1;
@@ -1641,6 +1649,7 @@ PRELOADER WAVE CSS
         transform: scale(1, 1);
     }
 }
+
 
 @keyframes preloader-wave {
     0% {
@@ -1658,3 +1667,58 @@ PRELOADER WAVE CSS
 }
 
 
+    .product-option, .color-option {
+      display: block;
+      text-align: center;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .product-option input,
+    .color-option input {
+      display: none;
+    }
+
+    .product-option img {
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      max-height: 150px;
+      object-fit: cover;
+      transition: border-color 0.3s;
+    }
+
+    .product-option:hover img,
+    .product-option input:checked + img {
+      border-color: #ff4081;
+    }
+
+    .product-option p,
+    .color-option p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .color-swatch {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      transition: border-color 0.3s;
+    }
+
+    .color-option:hover .color-swatch,
+    .color-option input:checked + .color-swatch {
+      border-color: #ff4081;
+    }
+
+    .custom-swatch {
+      background-color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
