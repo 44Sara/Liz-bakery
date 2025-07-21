@@ -1,182 +1,386 @@
-
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Liz Bakery – Place Your Order</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="main.css">
-  <style>
-  </style>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Liz Bakery</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- normalize.css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- bootstrap.min. -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- slicknav.min.css -->
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <!--font-awesome.min.css -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- owl.carousel.min.css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- main.css -->
+    <link rel="stylesheet" href="main.css">
+    <!-- responsive.css -->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-
-  <header class="sticky-header">
-    <div class="header-area header-area2">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-4">
-            <div class="logo">
-              <a href="index.html">
-                <h1><span>Liz</span> Bakery</h1>
-              </a>
+    <!-- prelaoder start -->
+    <div id="preloader-wrapper">
+        <div class="preloader-wave-effect"></div>
+    </div>
+    <!-- prelaoder end -->
+    <header class="sticky-header">
+        <div class="header-area header-area2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-4">
+                        <div class="logo">
+                            <a href="index.html"><h1><span>..Liz</span>Bakery</h1></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 d-none d-lg-block ">
+                        <div class="header-menu">
+                            <ul class=" mobail-menu d-flex">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="blog.html">Pastry Gallery </a></li>
+                                <li><a href="#blog">pages</a>
+                                    <ul class="dropdown_style">
+                                        <li><a href="blog.html">more</a></li>
+                                        <li><a href="blog-details.html">Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 d-block d-lg-none">
+                        <div class="menu">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-     <div class="col-lg-9 col-sm-8 d-none d-lg-block ">
-  <div class="header-menu">
-    <ul class="mobail-menu d-flex">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="order.html">Order</a></li> <!-- Main nav link -->
-
-      <li><a href="#">Pages</a> <!-- Dropdown -->
-        <ul class="dropdown_style">
-          <li><a href="blog.html">More Details</a></li>
-          <li><a href="order.html">Place an Order</a></li> <!-- Dropdown link -->
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>
-
-            </ul>
-          </div>
         </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- breadcrumb -->
-  <div class="breadcumb-area bg-img-4">
-    <div class="container text-center">
-      <h2>Place Your Order</h2>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><span>Order</span></li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- order form -->
-  <div class="order-area pt-60 pb-60">
-    <div class="container">
-      <div class="col-lg-8 col-md-12 mx-auto">
-        <form action="YOUR_ORDER_HANDLER_URL" method="POST" class="order-form">
-
-          <!-- Product Selection with Images -->
-          <div class="form-group">
-            <label>Select Product:</label>
-            <div class="row text-center">
-              <div class="col-md-4">
-                <label class="product-option">
-                  <input type="radio" name="product" value="custom_cake" required>
-                  <img src="./img/LisImage 2025-07-03 at 23.30.46.jpeg" alt="Custom Cake" class="img-fluid">
-                  <p>Custom Cake</p>
-                </label>
-              </div>
-              <div class="col-md-4">
-                <label class="product-option">
-                  <input type="radio" name="product" value="cupcakes">
-                  <img src="img/cupcakes.jpg" alt="Cupcakes" class="img-fluid">
-                  <p>Cupcakes</p>
-                </label>
-              </div>
-              <div class="col-md-4">
-                <label class="product-option">
-                  <input type="radio" name="product" value="cookies">
-                  <img src="img/cookies.jpg" alt="Cookies" class="img-fluid">
-                  <p>Cookies</p>
-                </label>
-              </div>
+    </header>
+    <!-- header-area end -->
+    <!-- .breadcumb-area start -->
+    <div class="breadcumb-area bg-img-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcumb-wrap text-center">
+                        <h2>Her love for the craft has never wavered. Even on the busiest days, Elsa remains calm, cheerful, and entirely focused on the details that matter. She sees her work as a blessing a daily opportunity to serve others, express creativity, and bring people together through the sweet language of pastries and cakes.</h2>
+                        <ul>
+                            <li><a href="index.html">Served with love</a></li>
+                            <li><span>By: Liz Bakery</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <!-- Color Selection with Swatches -->
-          <div class="form-group">
-            <label>Choose Color:</label>
-            <div class="row text-center">
-              <div class="col-6 col-md-2">
-                <label class="color-option">
-                  <input type="radio" name="color" value="pink" required>
-                  <span class="color-swatch" style="background-color: pink;"></span>
-                  <p>Pink</p>
-                </label>
-              </div>
-              <div class="col-6 col-md-2">
-                <label class="color-option">
-                  <input type="radio" name="color" value="blue">
-                  <span class="color-swatch" style="background-color: #3399ff;"></span>
-                  <p>Blue</p>
-                </label>
-              </div>
-              <div class="col-6 col-md-2">
-                <label class="color-option">
-                  <input type="radio" name="color" value="yellow">
-                  <span class="color-swatch" style="background-color: #ffcc00;"></span>
-                  <p>Yellow</p>
-                </label>
-              </div>
-              <div class="col-6 col-md-2">
-                <label class="color-option">
-                  <input type="radio" name="color" value="white">
-                  <span class="color-swatch" style="background-color: white; border: 1px solid #ccc;"></span>
-                  <p>White</p>
-                </label>
-              </div>
-              <div class="col-6 col-md-4 mt-2">
-                <label class="color-option">
-                  <input type="radio" name="color" value="custom">
-                  <span class="color-swatch custom-swatch">✎</span>
-                  <p>Custom</p>
-                </label>
-              </div>
-            </div>
-          </div>
-
-          <!-- Other Fields -->
-          <div class="form-group">
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" class="form-control" min="1" value="1" required>
-          </div>
-
-          <div class="form-group">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="customer_name" class="form-control" placeholder="Full Name" required>
-          </div>
-
-          <div class="form-group">
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" class="form-control" placeholder="+1 555-555-5555" required>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" class="form-control" placeholder="you@example.com" required>
-          </div>
-
-          <div class="form-group">
-            <label for="notes">Special Requests / Notes:</label>
-            <textarea id="notes" name="notes" class="form-control" rows="4" placeholder="Write any custom requests here..."></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-block">Place Order</button>
-        </form>
-      </div>
+        </div>
     </div>
-  </div>
+    <!-- .breadcumb-area end -->
+    <!-- blog area start -->
+    <div class="blog-details-area">
+        <div class="container">
+            <div class="row">
+                <!-- widget main content start -->
+                <div class="col-lg-9 col-md-8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="blog-details">
+                                <div class="blg-thumb">
+                                    <a href="blog.html"><img src="./img/LisgardenImage 2025-07-10 at 01.51.16.jpeg" alt="image"></a>
+                                </div>
+                                <div class="blg-content">
+                                    <div class="blog-top-meta">
+                                        <div class="meta-title">
+                                            <h2><a href="blog.html">We Provide You the Best </a></h2>
+                                            <span class="blg-meta"></span>
+                                        </div>
+                                        <div class="meta-share">
+                                            <span></span>
+                                             <ul>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                            </ul>
+                                        </div> 
+                                    </div> 
+                                    <p>
+Liz Bakery where sweet dreams come to life. Every dessert is handmade with love, care, and a sprinkle of joy, creating a warm experience for customers who crave more than just a treat. From custom cakes to traditional pastries, Liz Bakery delivers flavor and heart in every bite.
 
-  <!-- footer -->
-  <footer class="footer-area text-center p-4">
-    <p>&copy; 2025 Liz Bakery. All rights reserved.</p>
-  </footer>
+</p>
+                                    <p>
+Liz Bakery crafts stunning desserts that taste as beautiful as they look. With a reputation for excellence, the bakery blends timeless recipes with creative flair, making it a favorite for weddings, celebrations, and everyday indulgence. </p>
+                                    <blockquote>
+                                        <p> 
+Liz Bakery proudly blends tradition with innovation, offering a rich selection of cultural desserts that celebrate heritage and flavor. Whether it’s a classic cake or a modern twist on a beloved pastry, each item reflects the passion and authenticity of its creator, Elsa Hailu.<i class="fa fa-quote-right"></i></p>
+                                    </blockquote>
+                                    <p> 
 
+
+
+                                </div>
+                            </div>
+                            <!-- comments area end -->
+                            <div class="comment-area">
+                                <h4 class="comment-title"><span>(03)</span>Comments</h4>
+                                <ul class="comment-list">
+                                    <li class="comment-info-inner">
+                                        <article>
+                                            <div class="comment-thumb">
+                                                <img src="./img/LizmlL._AC_SL1500_.jpeg "alt="image">
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="meta-data">
+                                                    <h2>Sara Hailu</h2>
+                                                    <span></span>
+                                                </div>
+                                                <p>For my daughter’s graduation, my sister came all the way from Australia with her two daughters and husband  and that, by itself, was the greatest gift of my life. While her visit wasn’t a surprise, what she did for us was beyond anything I imagined. She arranged the most breathtaking buffet of cakes from Liz Bakery. The table was filled with a gorgeous three tier centerpiece cake, surrounded by mini cupcakes, fruit tarts, mousse slices, and cream puffs  each crafted to perfection. The main cake was out of this world  beautifully designed, rich, moist, and full of flavor. I’ve never been this impressed. My sister took care of every detail, and Liz Bakery brought her vision to life so perfectly. It turned a proud and emotional day into a memory I’ll treasure forever.
+
+                                                    </p>
+                                                <a href="#">Reply</a>
+                                            </div>
+                                        </article>
+                                        <ul class="children">
+                                            <li class="comment-info-inner">
+                                                <article>
+                                                    <div class="comment-thumb">
+                                                        <img src="./img/WhatsApp Image 2025at 15.05.03.jpeg" alt="image">
+                                                    </div>
+                                                    <div class="comment-content">
+                                                        <div class="meta-data">
+                                                            <h2>Tina Mark</h2>
+                                                            <span></span>
+                                                        </div>
+                                                        <p> I surprised my husband with a chocolate hazelnut cake from Liz Bakery for his birthday, and he was blown away. The flavor was decadent and the custom topper made it personal and fun. It’s the kind of cake that makes you want to celebrate again the next day!.</p>
+                                                        <a href="#">Reply</a>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="comment-info-inner">
+                                        <article>
+                                            <div class="comment-thumb">
+                                                <img src="./img/beckyImage 2025-04.07.18.jpeg" alt="image">
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="meta-data">
+                                                    <h2>Becky Mekonen</h2>
+                                                    <span></span>
+                                                </div>
+                                                <p>I’ll never forget the day of my graduation  not just because of the milestone, but because of the love that surrounded me. My aunt came all the way from Australia with my cousins and uncle, and having them there meant the world to me. It was already emotional seeing everyone together, but then she surprised us with the most incredible buffet of cakes from Liz Bakery. There was a huge three tier cake in the center, and around it were all kinds of mini treats cupcakes, mousse, tarts, and more. It felt like something out of a dream.
+
+The main cake wasn’t just beautiful it was insanely delicious. Every single person at the party was talking about how good everything tasted. I’ve never seen a cake that felt so personal, so perfect. My aunt handled all of it on her own, and Liz Bakery made it all come to life in the most amazing way. I felt so loved and celebrated it turned an already special day into something unforgettable. I’ll always remember that moment.</p>
+                                                <a href="#">Reply</a>
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- comments area end -->
+                            <!-- leave comment area start -->
+                            <div class="leave-comment-area">
+                                <h4 class="comment-title">Leave a Comment</h4>
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="text" name="Name" placeholder="Name">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="Subject" placeholder="Subject">
+                                        </div>
+                                    </div>
+                                    <textarea name="msg" id="comment_msg" placeholder="Type Comment"></textarea>
+                                    <input type="submit" name="submit" id="c_submit" value="send">
+                                </form>
+                            </div>
+                            <!-- leave comment area end -->
+                        </div>
+                    </div>
+                </div>
+                <!-- widget main content end -->
+                <!-- widget sidebar start -->
+                <div class="col-lg-3 col-md-4">
+                    <div class="widget_sidebar">
+                        <!-- widget search start -->
+                        <div class="widget widget_search">
+                            <form action="#">
+                                <!-- <input type="text" name="search" placeholder="Search Here.."> -->
+<ul>
+       <li> <img src="./img/Lizimage 2025-07-14 at 17.45.09.jpeg" alt="image"></li>
+</ul>
+
+                                <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+                            </form>
+                        </div>
+                        <!-- widget search end -->
+                        <!-- widget category start -->
+                        <div class="widget widget_category">
+                            <h2 class="widget_title"></h2>
+                            <ul>
+              <ul class="category-list">
+  <!-- <li><a href="#">Wedding Cakes <span></span></a></li>
+  <li><a href="#">Birthday Cakes <span></span></a></li> -->
+      <img src="./img/Lizblue Image 2025-07-10 at 01.51.16.jpeg" alt="image">
+  <!-- <li><a href="#">Cupcakes <span></span></a></li> -->
+  <!-- <li><a href="#">Cultural Desserts <span></span></a></li> -->
+  <!-- <li><a href="#">Assorted Pastries <span></span></a></li> -->
+</ul>
+
+                            </ul>
+                        </div>
+                        <!-- widget category end -->
+                        <!-- widget recent post start -->
+                        <div class="widget widget_recent_entries">
+                            <h2 class="widget_title"></h2>
+                            <div class="rcp_post_ist">
+                                <div class="rcp_single">
+                                    <div class="rcp_thumb">
+                                        <img src="./img/momImage 2025-07-11 at 08.42.31 copy.jpeg" alt="image">
+                                    </div>
+                                    <div class="rcp_content">
+                                        <h2><a href="">At Liz Bakery, baking is more than just a business it’s a heartfelt service. Each dessert is baked fresh with premium ingredients and finished with care, capturing the essence of every celebration. From rich chocolate ganache to light vanilla chiffon, each slice tells a story of love and tradition.</a></h2>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="rcp_single">
+                                    <div class="rcp_thumb">
+                                        <img src="./img/Liz beach Image 2025-07-10 at 01.51.16.jpeg" alt="image">
+                                    </div>
+                                    <div class="rcp_content">
+                                        <h2><a href="blog-standard.html"> 
+Liz Bakery is a hub of creativity where custom cake dreams come true. Whether it’s a themed birthday cake, a show stopping wedding centerpiece, or a batch of elegant cupcakes, Liz Bakery works closely with clients to bring their vision to life in the most delicious way possible</a></h2>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="rcp_single">
+                                    <div class="rcp_thumb">
+                                        <img src="./img/LizrsrEKOOZL._AC_UL640_FMwebp_QL65_.jpeg" alt="image">
+                                    </div>
+                                    <div class="rcp_content">
+                                        <h2><a href="blog-standard.html">From intimate family events to grand receptions, Liz Bakery rises to the occasion every time. The team listens attentively, sketches creatively, and delivers flawlessly. Each creation is not just dessert, but a centerpiece designed to spark joy, impress guests, and leave a lasting memory.</a></h2>
+                                        <h2><a href="blog-standard.html"></a></h2>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="rcp_single">
+                                    <div class="rcp_thumb">
+                                        <img src="./img/LizScreenshot_20221026-132226_Instagram.jpeg" alt="image">
+                                    </div>
+                                    <div class="rcp_content">
+                                        <h2><a href="blog-standard.html">Liz Bakery takes pride in crafting cakes that taste as stunning as they look. With a passion for precision and artistry, every order is tailored to match the client’s special occasion whether it’s a baby shower, anniversary, or cultural celebration. The flavors are unforgettable, and the designs are unforgettable works of edible art.</a></h2>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- widget recent post end -->
+                        <!-- widget teags start -->
+                        <div class="widget widget_tags">
+                            <h2 class="widget_title"></h2>
+<ul>
+    <!-- <li><a href="#">Wedding Cakes</a></li>
+    <li><a href="#">Birthday Cakes</a></li>
+    <li><a href="#">Custom Orders</a></li> -->
+
+                                            <img src="./img/Wedding Image 2025-07-10 at 09.54.13.jpeg" alt="image">
+    <!-- <li><a href="#">Pastries</a></li>
+    <li><a href="#">Cupcakes</a></li>
+    <li><a href="#">Cultural Desserts</a></li>
+    <li><a href="#">Dessert Gallery</a></li> -->
+</ul>
+
+                        </div>
+                        <!-- widget teags end -->
+                    </div>
+                </div>
+                <!-- widget sidebar end -->
+            </div>
+        </div>
+    </div>
+    <!-- blog area end -->
+    <!-- footer-area start -->
+    <div class=" footer-area">
+        <div class="container">
+            <div class="footer-item">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="footer-single">
+                            <ul>
+                                <li><a href="tel:+8801745208208"><span><i class="fa fa-phone"></i></span>+61 402 667 732<br> <br>+03 8361 7996 </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="footer-single">
+                            <ul>
+                                <li><a href="#"><span><i class="fa fa-envelope"></i></span>  yohiberry@gmail.com  <br></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="footer-single">
+                            <ul>
+                                <li><a href="#"><span><i class="fa fa-envelope"></i></span> elsahailulizbakery@gmail.com<br></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- footer-area end -->
+    <!-- footer-sub-area start-->
+    <div class="footer-sub-area">
+        <div class="container">
+            <div class="footer-sub-content">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <span>2025 Liz Bakery Elsa Hailu Name All Right Reserved</span>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <ul class="d-flex">
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="#">contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer-sub-area end-->
+    <!-- scroll up start-->
+    <a href="#scrolltop" class="scrollup"><i class="fa fa-angle-up"></i></a>
+    <!-- scroll up end-->
+    <!-- all js here -->
+    <!-- modernizr-3.5.0.min.js -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- jquery latest version -->
+    <script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <!-- owl.carousel.min.js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- jquery.slicknav.min.js -->
+    <script src="js/jquery.slicknav.min.js"></script>
+    <!-- jquery-sticky-menu.js -->
+    <script src="js/jquery-sticky-menu.js"></script>
+    <!-- imageloded.min.js -->
+    <script src="js/imageloded.min.js"></script>
+    <!-- isotop.min.js -->
+    <script src="js/isotop.min.js"></script>
+    <!-- easing-min.js -->
+    <script src="js/easing-min.js"></script>
+    <!-- main.js -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
